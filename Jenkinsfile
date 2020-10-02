@@ -1,7 +1,7 @@
 pipeline {
 
   environment {
-    PROJECT = "<>"
+    PROJECT = "qwiklabs-gcp-01-054280b9a4f0"
     APP_NAME = "valkyrie-app"
     FE_SVC_NAME = "valkyrie-dev"
     CLUSTER = "valkyrie-dev"
