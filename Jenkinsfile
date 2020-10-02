@@ -5,7 +5,7 @@ pipeline {
     APP_NAME = "valkyrie-app"
     FE_SVC_NAME = "valkyrie-dev"
     CLUSTER = "valkyrie-dev"
-    CLUSTER_ZONE = "us-east1-d"
+    CLUSTER_ZONE = "us-central1-a"
     BUILD_NUMBER = "v0.0.1"
     IMAGE_TAG = "gcr.io/${PROJECT}/${APP_NAME}:${BUILD_NUMBER}"
     JENKINS_CRED = "${PROJECT}"
