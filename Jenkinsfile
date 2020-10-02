@@ -1,12 +1,13 @@
 pipeline {
 
   environment {
-    PROJECT = "qwiklabs-gcp-00-d0df3532e655"
+    PROJECT = "<>"
     APP_NAME = "valkyrie-app"
     FE_SVC_NAME = "valkyrie-dev"
     CLUSTER = "valkyrie-dev"
     CLUSTER_ZONE = "us-east1-d"
-    IMAGE_TAG = "gcr.io/${PROJECT}/${APP_NAME}:dev.${env.BUILD_NUMBER}"
+    BUILD_NUMBER = "v0.0.1"
+    IMAGE_TAG = "gcr.io/${PROJECT}/${APP_NAME}:${BUILD_NUMBER}"
     JENKINS_CRED = "${PROJECT}"
   }
 
