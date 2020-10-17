@@ -1,7 +1,7 @@
 pipeline {
 
   environment {
-    PROJECT = "qwiklabs-gcp-01-054280b9a4f0"
+    PROJECT = $DEVSHELL_PROJECT_ID
     APP_NAME = "valkyrie-app"
     FE_SVC_NAME = "valkyrie-dev"
     CLUSTER = "valkyrie-dev"
