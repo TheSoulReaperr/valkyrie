@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: backend
-        image: gcr.io/qwiklabs-gcp-01-054280b9a4f0/valkyrie-app:v0.0.1
+        image: gcr.io/$DEVSHELL_PROJECT_ID/valkyrie-app:v0.0.1
         resources:
           limits:
             memory: "500Mi"
@@ -29,7 +29,7 @@ spec:
         - name: backend
           containerPort: 8080
       - name: frontend
-        image: gcr.io/qwiklabs-gcp-01-054280b9a4f0/valkyrie-app:v0.0.1
+        image: gcr.io/$DEVSHELL_PROJECT_ID/valkyrie-app:v0.0.1
         resources:
           limits:
             memory: "500Mi"
