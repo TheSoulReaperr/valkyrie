@@ -1,9 +1,12 @@
 kind: Deployment
-apiVersion: extensions/v1beta1
+apiVersion: apps/v1
 metadata:
   name: valkyrie-dev
 spec:
   replicas: 1
+  selector:
+    matchLabels:
+      app: valkyrie-app
   template:
     metadata:
       name: valkyrie-app
@@ -14,7 +17,7 @@ spec:
     spec:
       containers:
       - name: backend
-        image: gcr.io/PROCZZ/valkyrie-app:v0.0.1
+        image: gcr.io/PORCZZ/valkyrie-app:v0.0.1
         resources:
           limits:
             memory: "500Mi"
@@ -29,7 +32,7 @@ spec:
         - name: backend
           containerPort: 8080
       - name: frontend
-        image: gcr.io/PROCZZ/valkyrie-app:v0.0.1
+        image: gcr.io/PORCZZ/valkyrie-app:v0.0.1
         resources:
           limits:
             memory: "500Mi"
